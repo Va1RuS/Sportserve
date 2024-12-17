@@ -6,7 +6,7 @@ from src.saver import DataSaver
 from src.db_manager import DatabaseManager
 from src.visualizer import DataVisualizer
 
-from settings import CSV_PATH
+from settings import CSV_PATH, VISUALIZATIONS_PATH
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -28,9 +28,9 @@ def ingest_data():
         db.initialize_database()
         db.ingest_csv(CSV_PATH)
 
-def analyze_data():
+def analyze_common_properties():
     
-    visualizer = DataVisualizer()
+    visualizer = DataVisualizer(output_dir=VISUALIZATIONS_PATH + "/common_properties")
     
     with DatabaseManager() as db:
         patterns = db.analyze_common_properties(min_occurrence_percent=1.0)
@@ -55,4 +55,4 @@ if __name__ == "__main__":
     if args.action in ['ingest', 'all']:
         ingest_data()
     if args.action == 'analyze':
-        analyze_data()
+        analyze_common_properties()
