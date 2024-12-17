@@ -1,8 +1,9 @@
 import sqlite3
 from typing import List, Dict, Any
 import logging
-from settings import DATABASE_PATH, USER_SCHEMA, COLUMN_TYPES, PRIMARY_KEY_COL
+from settings import DATABASE_PATH, USER_SCHEMA, COLUMN_TYPES
 import os
+import pandas as pd
 
 logger = logging.getLogger(__name__)
 
@@ -119,3 +120,29 @@ class DatabaseManager:
                     results[column] = patterns
         
         return results
+
+    def get_users_dataframe(self, limit: int = 1000) -> pd.DataFrame:
+        query = """
+        SELECT
+            first_name,
+            last_name,
+            gender,
+            date_of_birth,
+            job_title,
+            key_skill,
+            city,
+            state,
+            latitude,
+            longitude,
+            subscription_plan,
+            subscription_status,
+            payment_method,
+            subscription_term
+        FROM users
+        LIMIT ?
+        """
+        
+        with self.connection:
+            df = pd.read_sql_query(query, self.connection, params=(limit,))
+        
+        return df

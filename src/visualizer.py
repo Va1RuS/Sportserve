@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from typing import Dict, List
 import os
-from datetime import datetime
 from settings import VISUALIZATIONS_PATH
 
 
@@ -18,8 +17,7 @@ class DataVisualizer:
         sns.set_palette("husl")
         
     def _save_plot(self, category: str, plot_type: str):
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"{category}_{plot_type}_{timestamp}.png"
+        filename = f"{category}_{plot_type}.png"
         plt.savefig(os.path.join(self.output_dir, filename), 
                    bbox_inches='tight', 
                    dpi=300)
@@ -65,7 +63,6 @@ class DataVisualizer:
         plt.figure(figsize=(12, 8))
         bars = plt.barh(labels, counts)
         
-        # Add percentage labels
         for i, bar in enumerate(bars):
             width = bar.get_width()
             plt.text(width, bar.get_y() + bar.get_height()/2,
@@ -82,7 +79,6 @@ class DataVisualizer:
         bars = plt.bar(labels, counts)
         plt.xticks(rotation=45, ha='right')
         
-        # Add percentage labels
         for i, bar in enumerate(bars):
             height = bar.get_height()
             plt.text(bar.get_x() + bar.get_width()/2, height,
