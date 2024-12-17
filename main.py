@@ -5,8 +5,10 @@ from src.transformer import DataTransformer
 from src.saver import DataSaver
 from src.db_manager import DatabaseManager
 from src.visualizer import DataVisualizer
+from src.network_visualizer import NetworkVisualizer
 
 from settings import CSV_PATH, VISUALIZATIONS_PATH
+import os
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -30,20 +32,25 @@ def ingest_data():
 
 def analyze_common_properties():
     
-    visualizer = DataVisualizer(output_dir=VISUALIZATIONS_PATH + "/common_properties")
+    visualizer = DataVisualizer(output_dir=os.path.join(VISUALIZATIONS_PATH, "common_properties"))
     
     with DatabaseManager() as db:
         patterns = db.analyze_common_properties(min_occurrence_percent=1.0)
         
-        # Create visualizations
         for category, data in patterns.items():
             visualizer.visualize_category(category, data)
             
-        # Print text results
         for column, values in patterns.items():
             print(f"\nMost common {column}:")
             for value in values:
                 print(f"- {value['value']}: {value['count']} occurrences ({value['percentage']}%)")
+
+def analyze_user_similarities():
+    with DatabaseManager() as db:
+        raw_df = db.get_users_dataframe(limit=1000)
+        df = DataTransformer.prepare_for_similarity(raw_df)
+        visualizer = NetworkVisualizer(output_dir=os.path.join(VISUALIZATIONS_PATH, "networks"))
+        visualizer.analyze_similarities(df)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -56,3 +63,4 @@ if __name__ == "__main__":
         ingest_data()
     if args.action == 'analyze':
         analyze_common_properties()
+        analyze_user_similarities()

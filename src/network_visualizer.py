@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 import os
+from textwrap import wrap
 
 class NetworkVisualizer:
     def __init__(self, output_dir: str):
@@ -50,16 +51,18 @@ class NetworkVisualizer:
             [(e['source'], e['target'], e['weight']) for e in edges]
         )
         
-        pos = nx.spring_layout(G, k=0.8, seed=42)
+        pos = nx.spring_layout(G, k=1.2, seed=42)
         
         node_sizes = self.scale_node_sizes(avg_similarity)
         node_colors = self.get_node_colors(avg_similarity)
         
         edge_weights = [d['weight'] for _, _, d in G.edges(data=True)]
         edge_labels = {(u, v): f'{w:.2f}' for u, v, w in G.edges(data='weight')}
+        
+        edge_thickness = [(w - min(edge_weights)) / (max(edge_weights) - min(edge_weights) + 1e-5) * 5 + 1 for w in edge_weights]
 
         plt.figure(figsize=(16, 12))
-        nx.draw_networkx_edges(G, pos, width=[w * 2 for w in edge_weights], alpha=0.6, edge_color='gray')
+        nx.draw_networkx_edges(G, pos, width=edge_thickness, alpha=0.6, edge_color='gray')
         nx.draw_networkx_nodes(G, pos, 
                                node_size=[node_sizes[node] for node in G.nodes()],
                                node_color=[node_colors[node] for node in G.nodes()],
