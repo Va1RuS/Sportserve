@@ -1,0 +1,72 @@
+=== TOP 10 MOST SIMILAR USERS ===
+
+Similarity Score: 0.897
+User 1: Bernice Jerde
+Description: A 40 year old Polygender working as Corporate Education Supervisor with Proactive skills. Located in Framiberg, Wisconsin. Has a Basic Payment in advance subscription which is Active, paid via WeChat Pay.
+User 2: Gaston Schoen
+Description: A 40 year old Polygender working as Customer Supervisor with Technical savvy skills. Located in West Florencio, Wisconsin. Has a Student Full subscription subscription which is Active, paid via WeChat Pay.
+--------------------------------------------------
+
+Similarity Score: 0.895
+User 1: Carin Ortiz
+Description: A 54 year old Polygender working as Manufacturing Agent with Self-motivated skills. Located in South Aleaseton, Utah. Has a Basic Monthly subscription which is Pending, paid via Money transfer.
+User 2: Hobert Blanda
+Description: A 24 year old Polygender working as Manufacturing Consultant with Fast learner skills. Located in South Christianside, Mississippi. Has a Starter Full subscription subscription which is Pending, paid via Money transfer.
+--------------------------------------------------
+
+Similarity Score: 0.893
+User 1: Lamar Runte
+Description: A 57 year old Bigender working as Legacy Marketing Executive with Problem solving skills. Located in West Sylviashire, Connecticut. Has a Business Monthly subscription which is Pending, paid via Apple Pay.
+User 2: Enoch Tromp
+Description: A 28 year old Bigender working as Marketing Consultant with Self-motivated skills. Located in South Alexland, Hawaii. Has a Starter Monthly subscription which is Pending, paid via Money transfer.
+--------------------------------------------------
+
+Similarity Score: 0.892
+User 1: Desmond Witting
+Description: A 31 year old Bigender working as Customer Government Designer with Self-motivated skills. Located in Christiansenport, Hawaii. Has a Silver Monthly subscription which is Active, paid via Credit card.
+User 2: Enoch Tromp
+Description: A 28 year old Bigender working as Marketing Consultant with Self-motivated skills. Located in South Alexland, Hawaii. Has a Starter Monthly subscription which is Pending, paid via Money transfer.
+--------------------------------------------------
+
+Similarity Score: 0.892
+User 1: Marquetta Harber
+Description: A 28 year old Bigender working as Product Architect with Technical savvy skills. Located in Saranshire, Hawaii. Has a Professional Full subscription subscription which is Pending, paid via Money transfer.
+User 2: Desmond Witting
+Description: A 31 year old Bigender working as Customer Government Designer with Self-motivated skills. Located in Christiansenport, Hawaii. Has a Silver Monthly subscription which is Active, paid via Credit card.
+--------------------------------------------------
+
+Similarity Score: 0.890
+User 1: Herb Hayes
+Description: A 56 year old Genderfluid working as International Healthcare Engineer with Work under pressure skills. Located in Ladyfort, North Dakota. Has a Platinum Annual subscription which is Active, paid via Credit card.
+User 2: Caren Maggio
+Description: A 25 year old Genderfluid working as Human Construction Specialist with Problem solving skills. Located in North Scottview, North Dakota. Has a Platinum Annual subscription which is Pending, paid via Money transfer.
+--------------------------------------------------
+
+Similarity Score: 0.889
+User 1: Jarrett Denesik
+Description: A 46 year old Genderfluid working as Healthcare Liaison with Self-motivated skills. Located in West Elaport, Nevada. Has a Diamond Full subscription subscription which is Blocked, paid via Debit card.
+User 2: Isiah Blanda
+Description: A 42 year old Genderfluid working as Healthcare Associate with Technical savvy skills. Located in Bellaside, Illinois. Has a Diamond Full subscription subscription which is Idle, paid via Cash.
+--------------------------------------------------
+
+Similarity Score: 0.888
+User 1: Forrest Lehner
+Description: A 49 year old Polygender working as Investor Education Engineer with Technical savvy skills. Located in McLaughlinland, South Carolina. Has a Professional Payment in advance subscription which is Idle, paid via Money transfer.
+User 2: Chadwick Spencer
+Description: A 62 year old Polygender working as Regional Developer with Confidence skills. Located in East Merissaburgh, North Carolina. Has a Starter Payment in advance subscription which is Idle, paid via Bitcoins.
+--------------------------------------------------
+
+Similarity Score: 0.885
+User 1: Stacy Streich
+Description: A 57 year old Genderqueer working as Direct Sales Executive with Organisation skills. Located in North Trent, Maine. Has a Gold Full subscription subscription which is Active, paid via Alipay.
+User 2: Ninfa Berge
+Description: A 47 year old Genderqueer working as Sales Producer with Leadership skills. Located in Dinoport, Maine. Has a Free Trial Full subscription subscription which is Idle, paid via Alipay.
+--------------------------------------------------
+
+Similarity Score: 0.885
+User 1: Chadwick Spencer
+Description: A 62 year old Polygender working as Regional Developer with Confidence skills. Located in East Merissaburgh, North Carolina. Has a Starter Payment in advance subscription which is Idle, paid via Bitcoins.
+User 2: Dallas Kris
+Description: A 39 year old Polygender working as International Developer with Problem solving skills. Located in East Lewismouth, South Dakota. Has a Bronze Payment in advance subscription which is Active, paid via Google Pay.
+--------------------------------------------------
+

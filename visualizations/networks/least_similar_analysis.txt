@@ -1,0 +1,72 @@
+=== TOP 10 LEAST SIMILAR USERS ===
+
+Similarity Score: 0.262
+User 1: Marcel Heathcote
+Description: A 50 year old Genderfluid working as Marketing Strategist with Organisation skills. Located in New Clorinda, Arizona. Has a Standard Annual subscription which is Pending, paid via Paypal.
+User 2: Raymundo Rice
+Description: A 24 year old Bigender working as Internal Construction Consultant with Leadership skills. Located in Port Edmundoburgh, Louisiana. Has a Essential Full subscription subscription which is Blocked, paid via WeChat Pay.
+--------------------------------------------------
+
+Similarity Score: 0.268
+User 1: Davida Swaniawski
+Description: A 58 year old Genderfluid working as Regional Banking Consultant with Networking skills skills. Located in Keniaton, Missouri. Has a Free Trial Full subscription subscription which is Idle, paid via Google Pay.
+User 2: Maria Huel
+Description: A 34 year old Bigender working as Chief Agent with Communication skills. Located in Gearldineberg, Vermont. Has a Essential Annual subscription which is Idle, paid via WeChat Pay.
+--------------------------------------------------
+
+Similarity Score: 0.269
+User 1: Hunter Sauer
+Description: A 30 year old Bigender working as Construction Director with Networking skills skills. Located in Paucekfurt, Nebraska. Has a Free Trial Payment in advance subscription which is Blocked, paid via WeChat Pay.
+User 2: Marcel Heathcote
+Description: A 50 year old Genderfluid working as Marketing Strategist with Organisation skills. Located in New Clorinda, Arizona. Has a Standard Annual subscription which is Pending, paid via Paypal.
+--------------------------------------------------
+
+Similarity Score: 0.271
+User 1: Debby Beer
+Description: A 64 year old Female working as Banking Producer with Networking skills skills. Located in Dudleyside, Connecticut. Has a Essential Full subscription subscription which is Pending, paid via Apple Pay.
+User 2: Vernon Waters
+Description: A 35 year old Polygender working as Chief Manager with Fast learner skills. Located in South Velvet, Oregon. Has a Professional Monthly subscription which is Idle, paid via Credit card.
+--------------------------------------------------
+
+Similarity Score: 0.271
+User 1: Ronda Herman
+Description: A 28 year old Genderfluid working as District Healthcare Engineer with Networking skills skills. Located in Lake Ted, Maryland. Has a Free Trial Annual subscription which is Blocked, paid via Cheque.
+User 2: Noriko Hermiston
+Description: A 56 year old Bigender working as Farming Producer with Proactive skills. Located in West Donteton, Indiana. Has a Silver Payment in advance subscription which is Pending, paid via Cash.
+--------------------------------------------------
+
+Similarity Score: 0.272
+User 1: Debby Beer
+Description: A 64 year old Female working as Banking Producer with Networking skills skills. Located in Dudleyside, Connecticut. Has a Essential Full subscription subscription which is Pending, paid via Apple Pay.
+User 2: Claudio Strosin
+Description: A 53 year old Polygender working as Construction Facilitator with Confidence skills. Located in New Reiko, Idaho. Has a Professional Annual subscription which is Idle, paid via Alipay.
+--------------------------------------------------
+
+Similarity Score: 0.273
+User 1: Scott Lind
+Description: A 63 year old Polygender working as Construction Associate with Technical savvy skills. Located in New Hueymouth, Louisiana. Has a Professional Payment in advance subscription which is Pending, paid via Cash.
+User 2: Hettie Predovic
+Description: A 43 year old Genderqueer working as Administration Agent with Organisation skills. Located in Port Anisa, Maine. Has a Premium Annual subscription which is Active, paid via Alipay.
+--------------------------------------------------
+
+Similarity Score: 0.275
+User 1: Scott Lind
+Description: A 63 year old Polygender working as Construction Associate with Technical savvy skills. Located in New Hueymouth, Louisiana. Has a Professional Payment in advance subscription which is Pending, paid via Cash.
+User 2: Verla Simonis
+Description: A 26 year old Male working as Human Legal Consultant with Organisation skills. Located in Auerchester, New York. Has a Gold Full subscription subscription which is Blocked, paid via Credit card.
+--------------------------------------------------
+
+Similarity Score: 0.276
+User 1: Tristan Effertz
+Description: A 45 year old Polygender working as District Farming Agent with Technical savvy skills. Located in East Theodoremouth, Georgia. Has a Free Trial Monthly subscription which is Idle, paid via Money transfer.
+User 2: Milton Hilpert
+Description: A 55 year old Female working as Technology Director with Networking skills skills. Located in Schummland, Alabama. Has a Student Payment in advance subscription which is Active, paid via Apple Pay.
+--------------------------------------------------
+
+Similarity Score: 0.278
+User 1: Davida Swaniawski
+Description: A 58 year old Genderfluid working as Regional Banking Consultant with Networking skills skills. Located in Keniaton, Missouri. Has a Free Trial Full subscription subscription which is Idle, paid via Google Pay.
+User 2: Raymundo Rice
+Description: A 24 year old Bigender working as Internal Construction Consultant with Leadership skills. Located in Port Edmundoburgh, Louisiana. Has a Essential Full subscription subscription which is Blocked, paid via WeChat Pay.
+--------------------------------------------------
+
