@@ -45,7 +45,7 @@ class DatabaseManager:
             
     def _create_indexes(self):
         indexes = [
-            "CREATE INDEX IF NOT EXISTS idx_country ON users(country)",
+            "CREATE INDEX IF NOT EXISTS idx_state ON users(state)",
             "CREATE INDEX IF NOT EXISTS idx_city ON users(city)",
             "CREATE INDEX IF NOT EXISTS idx_job_title ON users(job_title)"
         ]
@@ -76,3 +76,46 @@ class DatabaseManager:
         with self.connection:
             cursor = self.connection.execute(query)
             return cursor.fetchone()[0]
+
+    def analyze_common_properties(self, min_occurrence_percent: float = 1.0) -> Dict[str, List[Dict[str, Any]]]:
+        analysis_columns = [
+            'country', 'city', 'job_title', 'subscription_plan', 
+            'subscription_status', 'gender', 'payment_method'
+        ]
+        
+        total_records = self.get_record_count()
+        min_occurrences = (total_records * min_occurrence_percent) / 100
+        
+        results = {}
+        
+        for column in analysis_columns:
+            query = f"""
+                WITH TopResults AS (
+                    SELECT 
+                        {column},
+                        COUNT(*) as count,
+                        ROUND(COUNT(*) * 100.0 / {total_records}, 2) as percentage
+                    FROM users
+                    GROUP BY {column}
+                    HAVING COUNT(*) >= ?
+                    ORDER BY count DESC
+                    LIMIT 10
+                )
+
+                SELECT * FROM TopResults
+            """
+            
+            with self.connection:
+                cursor = self.connection.execute(query, (min_occurrences,))
+                patterns = [
+                    {
+                        'value': row[0],
+                        'count': row[1],
+                        'percentage': row[2]
+                    }
+                    for row in cursor.fetchall()
+                ]
+                if patterns:
+                    results[column] = patterns
+        
+        return results

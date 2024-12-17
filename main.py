@@ -1,10 +1,11 @@
 import argparse
 import logging
-import pandas as pd
 from src.fetcher import DataFetcher
 from src.transformer import DataTransformer
 from src.saver import DataSaver
 from src.db_manager import DatabaseManager
+from src.visualizer import DataVisualizer
+
 from settings import CSV_PATH
 
 logging.basicConfig(level=logging.INFO)
@@ -27,12 +28,31 @@ def ingest_data():
         db.initialize_database()
         db.ingest_csv(CSV_PATH)
 
+def analyze_data():
+    
+    visualizer = DataVisualizer()
+    
+    with DatabaseManager() as db:
+        patterns = db.analyze_common_properties(min_occurrence_percent=1.0)
+        
+        # Create visualizations
+        for category, data in patterns.items():
+            visualizer.visualize_category(category, data)
+            
+        # Print text results
+        for column, values in patterns.items():
+            print(f"\nMost common {column}:")
+            for value in values:
+                print(f"- {value['value']}: {value['count']} occurrences ({value['percentage']}%)")
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('action', choices=['fetch', 'ingest', 'all'])
+    parser.add_argument('action', choices=['fetch', 'ingest', 'all', 'analyze'])
     args = parser.parse_args()
     
     if args.action in ['fetch', 'all']:
         fetch_data()
     if args.action in ['ingest', 'all']:
         ingest_data()
+    if args.action == 'analyze':
+        analyze_data()

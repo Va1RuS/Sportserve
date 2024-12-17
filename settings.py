@@ -9,7 +9,10 @@ RATE_LIMIT_DELAY = 1
 
 DATABASE_PATH = "data/users.db"
 PRIMARY_KEY_COL = "id"
+
 CSV_PATH = "data/users.csv"
+
+VISUALIZATIONS_PATH = "visualizations"
 
 USER_SCHEMA: Dict[str, str] = {
     "id": "id",
